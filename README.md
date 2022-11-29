@@ -84,7 +84,7 @@ It has a Bean configuration defined in `OAuth2ClientWithWebClientConfiguration`.
 
 RestTemplate method usage is demonstrated in `OAuth2ApiCallWithWebClientRestController`.
 
-In `OAuth2ApiCallWithWebClientRestController` there is 3 methods that you can use as an example OAuth 2 flow:
+In `OAuth2ApiCallWithWebClientRestController` there is 2 methods that you can use as an example OAuth 2 flow:
 
 1. `getCandlestickChartDataViaWebClient()` method uses `WebClient` in order to authenticate.
 
@@ -106,9 +106,7 @@ In `OAuth2ApiCallWithWebClientRestController` there is 3 methods that you can us
 &ensp; * Then uses that `Access Token` in order to call PriceFeed API Candlestick endpoint url via `WebClient`.
 
 &ensp; * This method will call PriceFeed API Candlestick endpoint url and get a recent price data of a financial instrument identified by its ISIN code.  
- 
 
-3. `scheduledPriceFeeAPICandlestickRequest()` a scheduled method which uses `WebClient` in order to authenticate.
 
 
 
