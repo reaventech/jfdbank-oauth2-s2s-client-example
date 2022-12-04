@@ -27,7 +27,7 @@ public class OAuth2ClientWithWebClientConfiguration {
                 .tokenUri(securityParametersConfig.getIssuerTokenUri())
                 .clientId(securityParametersConfig.getClientId())
                 .clientSecret(securityParametersConfig.getClientSecret())
-                .scope(securityParametersConfig.getScope())
+                .scope(securityParametersConfig.getScopes())
                 .authorizationGrantType(new AuthorizationGrantType(securityParametersConfig.getAuthorizationGrantType()))
                 .build();
         return new InMemoryReactiveClientRegistrationRepository(registration);

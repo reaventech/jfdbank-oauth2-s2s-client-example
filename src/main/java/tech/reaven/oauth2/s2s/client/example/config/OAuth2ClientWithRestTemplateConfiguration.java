@@ -28,7 +28,7 @@ public class OAuth2ClientWithRestTemplateConfiguration {
                 .tokenUri(securityParametersConfig.getIssuerTokenUri())
                 .clientId(securityParametersConfig.getClientId())
                 .clientSecret(securityParametersConfig.getClientSecret())
-                .scope(securityParametersConfig.getScope())
+                .scope(securityParametersConfig.getScopes())
                 .authorizationGrantType(new AuthorizationGrantType(securityParametersConfig.getAuthorizationGrantType()))
                 .build();
         return registration;

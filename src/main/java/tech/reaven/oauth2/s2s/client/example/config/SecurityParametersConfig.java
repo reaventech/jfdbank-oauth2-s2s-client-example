@@ -1,5 +1,7 @@
 package tech.reaven.oauth2.s2s.client.example.config;
 
+import java.util.List;
+
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.URL;
@@ -38,7 +40,7 @@ public class SecurityParametersConfig {
 	private String clientSecret;
 	
 	@NotNull
-	private String scope;
+	private List<String> scopes;
 	
 	@NotNull
 	private String authorizationGrantType;
